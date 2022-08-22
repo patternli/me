@@ -1,0 +1,70 @@
+$tiny: 320px;
+$sm: 480px;
+$md: 800px;
+$lg: 1024px;
+$xlg: 1200px;
+$xxlg: 1600px;
+
+
+.col-full {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-threequarters{
+    width: 75%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-twothirds {
+    width: 66%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-half {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-thirds {
+    width: 33%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-quarter {
+    width: 25%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-center{
+    margin: auto;
+}
+
+.clearfix:after { 
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+  .callout {
+    padding: 20px;
+    border-radius: 4px;
+  }
+
+ 

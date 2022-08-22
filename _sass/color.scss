@@ -1,0 +1,28 @@
+$alpha: #9b5de5;
+$beta: #fee440;
+$gamma: #00b4d8;
+$delta: green;
+$epsilon: red;
+$zeta: #e6a61a;
+$paper: white;
+$ink: black;
+
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function tint-dark($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}
+
+.color-alpha {
+    color: $alpha
+}
+
+.background-alpha-90 {
+    background-color: tint($alpha, 90);
+}
+
+.background-beta-90 {
+    background-color: tint($beta, 90);
+}
