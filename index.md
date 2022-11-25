@@ -1,9 +1,43 @@
 ---
 layout: base
 wrapper: home
+
+link:
+    - link: youtube.com
+      text: youtube
+      class: btn btn-primary
+    - link: amazon.com
+      text: amazon
+      class: btn btn-text
+
+card:
+    settings:
+        class: card-group
+        columns: 2
+    list:
+        - title: My first card
+          flag: super
+          meta: "Date: November 25th 2022 | Location: Bothell"
+          body: Has to be great
+          image: https://via.placeholder.com/150
+          class: flag
+          links:
+            - link: youtube.com
+              text: youtube
+              class: btn btn-primary
+            - link: amazon.com
+              text: amazon
+              class: btn btn-text
+
 ---
 
 # Hello 🖖🏽 I'm Dara Pressley
+
+{% include patterns/buttons/button.md content=page.link %}
+
+{% include patterns/card/card.md content=page.card %}
+
+
 
 <div class="home-hero" markdown="1">
 <div class="image" markdown="1">
