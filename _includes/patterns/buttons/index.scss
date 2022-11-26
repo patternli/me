@@ -1,0 +1,27 @@
+.btn {
+    padding: 1rem;
+    a {
+        text-decoration: none;
+    }
+    border-radius: 4px;
+}
+
+.btn-alpha {
+    background-color: $gamma;
+    color: $ink;
+    &:hover {
+        color: $ink;
+        background-color: $alpha;
+        transition: background-color .8s ease;
+    }
+}
+
+.btn-zeta {
+    background-color: $zeta;
+    color: $ink;
+    &:hover {
+        color: $ink;
+        background-color: $alpha;
+        transition: background-color .8s ease;
+    }
+}
