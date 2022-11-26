@@ -1,0 +1,58 @@
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+    //flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+    border: 1px solid $alpha;
+    .card-flag {
+        background-color: $alpha;
+        color: $paper;
+        padding: 2px;
+        width: 20%;
+        text-align: center;
+        position: absolute;
+        top: 25px;
+        right: -5%;
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .card-image {
+        width:100%; /*container-width*/
+        height: 200px;
+        overflow: hidden; /*hide bounds of image */
+        margin:0; /*reset margin of figure tag*/
+    }
+    .card-head {
+        padding: 0 15px;
+    }
+    .card-body {
+        color: $ink;
+        padding: 0 15px;
+        margin-bottom: 2.5rem;
+    }
+    .meta{
+        font-size: smaller;
+        color: tint(black, 40);
+    }
+
+    .card-foot {
+        position: absolute;
+        bottom: 1rem; 
+        left: 15px;
+    }
+
+}
+  
+
+
+// move to media scss
+img { width: 100%; height: auto; display: block;}

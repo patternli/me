@@ -19,8 +19,20 @@ card:
           flag: super
           meta: "Date: November 25th 2022 | Location: Bothell"
           body: Has to be great
-          image: https://via.placeholder.com/150
+          image: http://placekitten.com/300/300
           class: flag
+          links:
+            - link: youtube.com
+              text: youtube
+              class: btn btn-primary
+            - link: amazon.com
+              text: amazon
+              class: btn btn-text
+        - title: My second card
+          flag: flash
+          meta: "Date: November 26th 2022 | Location: Sammamish"
+          body: getting a chai while the walkers walk
+          image: http://placekitten.com/300/200
           links:
             - link: youtube.com
               text: youtube
