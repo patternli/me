@@ -1,55 +1,9 @@
 ---
 layout: base
 wrapper: home
-
-link:
-    - link: youtube.com
-      text: youtube
-      class: btn btn-primary
-    - link: amazon.com
-      text: amazon
-      class: btn btn-text
-
-card:
-    settings:
-        class: card-group
-        columns: 2
-    list:
-        - title: My first card
-          flag: super
-          meta: "Date: November 25th 2022 | Location: Bothell"
-          body: Has to be great
-          image: http://placekitten.com/300/300
-          class: card-left
-          links:
-            - link: youtube.com
-              text: youtube
-              class: btn btn-primary
-            - link: amazon.com
-              text: amazon
-              class: btn btn-text
-        - title: My second card
-          flag: flash
-          meta: "Date: November 26th 2022 | Location: Sammamish"
-          body: getting a chai while the walkers walk
-          image: http://placekitten.com/300/200
-          links:
-            - link: youtube.com
-              text: youtube
-              class: btn btn-primary
-            - link: amazon.com
-              text: amazon
-              class: btn btn-text
-
 ---
 
 # Hello 🖖🏽 I'm Dara Pressley
-
-{% include patterns/buttons/button.md content=page.link %}
-
-{% include patterns/card/card.md content=page.card %}
-
-
 
 <div class="home-hero" markdown="1">
 <div class="image" markdown="1">
