@@ -20,7 +20,7 @@ card:
           meta: "Date: November 25th 2022 | Location: Bothell"
           body: Has to be great
           image: http://placekitten.com/300/300
-          class: flag
+          class: card-left
           links:
             - link: youtube.com
               text: youtube
