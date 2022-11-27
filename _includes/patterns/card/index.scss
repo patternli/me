@@ -29,7 +29,9 @@
  .card-grid-450 {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
  }
-
+ .card-grid-half {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+ }
  .card-grid-full {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
  }
