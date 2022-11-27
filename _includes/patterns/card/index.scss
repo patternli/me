@@ -1,22 +1,89 @@
 
+
+
+
 .card-group {
-    //display: flex;
-    justify-content: space-between;
-    //flex-wrap: wrap;
-    gap: 15px;
-}
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 1rem;
+ }
+
+ .card-grid-200 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ }
+ .card-grid-250 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+
+ .card-grid-300 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ }
+
+ .card-grid-350 {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ }
+
+ .card-grid-400 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ }
+ .card-grid-450 {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+ }
+
+ .card-grid-full {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+ }
+
 
 .card {
-    width: 100%;
-    position: relative;
-    padding-bottom: 2.5rem;
+    display: grid;
     border: 1px solid $alpha;
+    padding-bottom: 2.5rem;
+    position: relative;
+    .card-image {
+        grid-area: image;
+        max-height: 150px;
+        width:100%; /*container-width*/
+        overflow: hidden; /*hide bounds of image */
+    
+    }
+    .card-head {
+        grid-area: head;
+        padding: 0 15px;
+    }
+    .card-body {
+        grid-area: body;
+        margin-bottom: 1rem;
+        padding: 0 15px;
+        color: $ink;
+    }
+
+    .card-foot {
+        grid-area: foot;
+        align-self: end;
+        padding: 0 15px;
+    }
+    grid-template-areas:
+        "image"
+        "head"
+        "body"
+        "foot";
+
     .card-flag {
         background-color: $alpha;
         color: $paper;
         padding: 2px;
         width: 100px;
         text-align: center;
+    }
+    .meta{
+        font-size: smaller;
+        color: tint(black, 40);
+    }
+}
+
+.card-tag {
+    .card-flag {
         position: absolute;
         top: 37px;
         right: 0%;
@@ -25,108 +92,54 @@
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
-    .card-image {
-        width:100%; /*container-width*/
-        height: 200px;
-        overflow: hidden; /*hide bounds of image */
-        margin:0; /*reset margin of figure tag*/
-    }
-    .card-head {
-        padding: 0 15px;
-    }
-    .card-body {
-        color: $ink;
-        padding: 0 15px;
-        margin-bottom: 3rem;
-    }
-    .meta{
-        font-size: smaller;
-        color: tint(black, 40);
-    }
-
-    .card-foot {
-        position: absolute;
-        bottom: 2rem; 
-        left: 15px;
-    }
-
 }
 
+
 .card-left {
-    display: grid;
+    grid-column: span 3;
     padding-bottom: 0;
     margin-bottom: 1rem;
-    .card-flag {
-        position: static;
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+    height: 300px;
+    grid-template-areas:
+        "image head head"
+        "image body body"
+        "image foot foot";
     .card-foot {
-        position: static;
-        padding: 0 15px;
-        bottom: 0;
+        padding: 30px 15px;
     }
     .card-image {
-        grid-area: image;
+        max-height: 300px;
         height: 300px;
     }
-    .card-head {
-        grid-area: head;
-    }
     .card-body {
-        grid-area: body;
         margin-bottom: 0;
     }
-
-    .card-foot {
-        grid-area: foot;
-    }
-    grid-template-areas: 
-        "image head head" 
-        "image body body" 
-        "image foot foot";
-
 }
 
 .card-right {
-    display: grid;
     padding-bottom: 0;
     margin-bottom: 1rem;
-    .card-flag {
-        position: static;
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
+    grid-template-areas:
+        "head head image"
+        "body body image"
+        "foot foot image";
     .card-foot {
-        position: static;
-        padding: 0 15px;
-        bottom: 0;
+        padding: 30px 15px;
     }
     .card-image {
-        grid-area: image;
-        height: 300px;
-    }
-    .card-head {
-        grid-area: head;
+        max-height: 300px;
     }
     .card-body {
-        grid-area: body;
         margin-bottom: 0;
     }
-
-    .card-foot {
-        grid-area: foot;
-    }
-    grid-template-areas: 
-        "head head image" 
-        "body body image" 
-        "foot foot image";
-
 }
 
+
 // move to media scss
-img { width: 100%; height: auto; display: block;}
+img { 
+    width: 100%; 
+    height: auto; 
+    display: block;
+    margin:0;
+    padding: 0;
+}
