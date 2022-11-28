@@ -15,6 +15,10 @@ $ink: black;
     @return mix(black, $color, $percentage);
 }
 
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+  }
+
 .color-alpha {
     color: $alpha
 }

@@ -67,4 +67,57 @@ $xxlg: 1600px;
     border-radius: 4px;
   }
 
+// CSS Grid
+.grid-200 {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ }
+ .grid-250 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+
+ .grid-300 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ }
+
+ .grid-350 {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ }
+
+ .grid-400 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ }
+ .grid-450 {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+ }
+
  
+ .grid-quarter {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+ }
+
+ .grid-third {
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+ }
+
+ .grid-half {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+ }
+
+ .grid-thirds {
+    grid-template-columns: repeat(auto-fit, minmax(66.66%, 1fr));
+ }
+
+ .grid-quarters {
+    grid-template-columns: repeat(auto-fit, minmax(75%, 1fr));
+ }
+
+ .grid-full {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+ }
+
+ .col-1{grid-column: span 1;}
+ .col-2{grid-column: span 2;}
+ .col-3{grid-column: span 3;}
+ .col-4{grid-column: span 4;}
+ .col-5{grid-column: span 5;}
+ .col-6{grid-column: span 6;}

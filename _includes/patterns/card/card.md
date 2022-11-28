@@ -1,5 +1,5 @@
 {% assign card=include.content %}
-<div class="card-group {{ card.settings.class }}">
+<div class="card-group {{ card.settings.class | default: "grid-350" }}">
 {% for c in card.list %}
     <div class="card {{ c.class }}">
         {% if c.image %}

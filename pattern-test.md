@@ -2,16 +2,24 @@
 layout: base
 title: "Pattern Test"
 
+cardspecial:
+  settings:
+    class: 
+  list:
+    - title: This is my special card
+      image: http://placekitten.com/450/450
+      body: it is very special to me
+      class: card-special
 card:
     settings:
-        class: card-grid-350
+      class: grid-350
     list:
         - title: My first card
           flag: super
           meta: "Date: November 25th 2022 | Location: Bothell"
           body: Has to be great
           image: http://placekitten.com/300/300
-          class:
+          class: card-left col-2
           links:
             - link: youtube.com
               text: youtube
@@ -56,5 +64,7 @@ card:
 
 ---
 
+{% include patterns/card/card.md content=page.cardspecial %}
 
 {% include patterns/card/card.md content=page.card %}
+
