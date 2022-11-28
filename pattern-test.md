@@ -7,19 +7,19 @@ cardspecial:
     class: 
   list:
     - title: This is my special card
-      image: http://placekitten.com/450/450
-      body: it is very special to me
+      feature: http://placekitten.com/450/450
+      short: it is very special to me
       class: card-special
 card:
     settings:
-      class: grid-350
+      class: grid-250
     list:
         - title: My first card
           flag: super
           meta: "Date: November 25th 2022 | Location: Bothell"
-          body: Has to be great
-          image: http://placekitten.com/300/300
-          class: card-left col-2
+          short: Has to be great
+          feature: http://placekitten.com/350/300
+          class:
           links:
             - link: youtube.com
               text: youtube
@@ -30,8 +30,8 @@ card:
         - title: My second card
           flag: flash
           meta: "Date: November 26th 2022 | Location: Sammamish"
-          body: getting a chai while the walkers walk
-          image: http://placekitten.com/300/200
+          short: getting a chai while the walkers walk
+          feature: http://placekitten.com/350/200
           class: card-tag
           links:
             - link: youtube.com
@@ -42,8 +42,8 @@ card:
               class: btn
         - title: My third card
           meta: "Date: November 26th 2022 | Location: home"
-          body: watching moonhaven
-          image: http://placekitten.com/500/300
+          short: watching moonhaven
+          feature: http://placekitten.com/500/300
           flag: Just In!
           links:
             - link: youtube.com
@@ -52,10 +52,18 @@ card:
             - link: amazon.com
               text: amazon
               class: btn
+cardleft:
+    settings:
+      class: grid-250
+    list:
         - title: My fourth card
           meta: "Date: November 26th 2022 | Location: home"
-          body: still watching moonhaven
-          image: http://placekitten.com/200/200
+          short: |
+            still watching moonhaven
+
+            it's awsome
+          class: card-left col-2
+          feature: http://placekitten.com/350/350
           links:
             - link: youtube.com
               text: youtube
@@ -68,3 +76,4 @@ card:
 
 {% include patterns/card/card.md content=page.card %}
 
+{% include patterns/card/card.md content=page.cardleft %}

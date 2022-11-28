@@ -2,8 +2,8 @@
 <div class="card-group {{ card.settings.class | default: "grid-350" }}">
 {% for c in card.list %}
     <div class="card {{ c.class }}">
-        {% if c.image %}
-        <div class="card-image"><img src="{{ c.image}}"></div>
+        {% if c.feature %}
+        <div class="card-image"><img src="{{ c.feature}}"></div>
         {% endif %}
         {% if c.title or c.flag %}
         <div class="card-head">
@@ -15,13 +15,13 @@
             {% endif %}
         </div>
         {% endif %}
-        {% if c.body or c.meta %}
+        {% if c.short or c.meta %}
         <div class="card-body">
             {% if c.meta %}
             <p class="meta">{{ c.meta }}</p>
             {% endif %}
-            {% if c.body %}
-            <p>{{ c.body }}</p>
+            {% if c.short %}
+            {{ c.short | markdownify }}
             {% endif %}
         </div>
         {% endif %}
