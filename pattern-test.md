@@ -13,20 +13,19 @@ cardspecial:
 card:
     settings:
       class: grid-250
+      limit: 3
     list:
         - title: My first card
           flag: super
           meta: "Date: November 25th 2022 | Location: Bothell"
           short: Has to be great
           feature: http://placekitten.com/350/300
-          class:
+          class: 
           links:
             - link: youtube.com
               text: youtube
-              class: btn btn-alpha
             - link: amazon.com
               text: amazon
-              class: btn btn-text
         - title: My second card
           flag: flash
           meta: "Date: November 26th 2022 | Location: Sammamish"
