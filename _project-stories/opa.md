@@ -5,6 +5,7 @@ date: 2020-6-1
 short: Complete overhaul and rebuild of their clinic locator
 role: Product Strategy & UX Lead
 feature: "/assets/img/projects/opa-feature.png"
+wrapper: home
 ---
 
 OPA has a [clinic locator](https://opa-fpclinicdb.hhs.gov/) that shows where the Title X clinics are. It is the main service they provide, along with reporting on clinic data.

@@ -5,6 +5,7 @@ date: 2022-12-1
 short: UX Review of website including audience profiles.
 role: UX Freelance
 feature: "/assets/img/projects/cbhsq-feature.png"
+wrapper: home
 ---
 
 When the ICF team began working on CBSHQ Data website site had significant usability issues. There were competing priorities that complicated the home page leaving users confused about what actions they should take. The primary purpose of the site, reports and data tables, were lost in the tabs and accordions experience that users did not know how to navigate. CBHSQ authors routinely created landing pages to point to their report just to help users navigate. And often had to answer help request from people who could not find what they needed.

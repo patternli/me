@@ -5,6 +5,7 @@ date: 2021-10-1
 short: Redesign and migration of the data website
 role: Product Strategy & UX Lead
 feature: "/assets/img/projects/samhda-feature.png"
+wrapper: home
 ---
 
 Full overhaul of the marketing pages for [SAMHDA](https://www.datafiles.samhsa.gov/). The site had a very outdated look and feel. There was also an overwhelming about of textual content that was not clear. The content also had many overlaps to the main Data website.  So our purpose was to modernize the site and create clear pathways to the data resources.
