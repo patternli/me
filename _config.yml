@@ -6,3 +6,5 @@ collections:
     output: true
     sort_by: date
     permalink: /:collection/:name
+  pages:
+    permalink: /:name

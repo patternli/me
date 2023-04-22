@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://kit.fontawesome.com/15d4b13b55.js" crossorigin="anonymous"></script>
 </head>
-<body class="{{ page.wrapper }}">
-    {{ content | markdownify }}
+<body>
+    {% include patterns/header/header.md %}
+    <div class="{{ page.wrapper }}">
+        {{ content | markdownify }}
+    </div>  
+    {% include patterns/footer/footer.md %}
 </body>
 </html>

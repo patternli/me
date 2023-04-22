@@ -35,10 +35,16 @@ Thinking about, talking about, designing out... Design Systems
 
 ### Featured Work
 
-TODO: _use a feature card element to pull img, title, link from sub pages_
+{% include patterns/card/card-stories.md limit=2%}
 
 ### Notebook
-TODO: _use a feature list element to pull title, link from sub pages_
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
 
 ### Favorite Quote
 <div class="quote" markdown="1">
@@ -46,6 +52,5 @@ All that you touch, you change. All that you change, changes you. The only lasti
 Octavia Butler, _Parable of the Sower_
 </div>
 
-### What I'm Reading
-TODO: _use a feature card element to pull img, title, link from sub pages_
+
 

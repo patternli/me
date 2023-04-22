@@ -1,0 +1,1 @@
+<i class="fa-solid fa-house"></i> <a href="/">Home</a> | <a href="/projects">Projects</a> |<a href="/about">About Me</a>

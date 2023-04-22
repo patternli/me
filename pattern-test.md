@@ -76,3 +76,5 @@ cardleft:
 {% include patterns/card/card.md content=page.card %}
 
 {% include patterns/card/card.md content=page.cardleft %}
+
+{% include patterns/card/card-stories.md limit=3%}

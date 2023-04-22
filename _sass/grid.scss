@@ -6,6 +6,48 @@ $xlg: 1200px;
 $xxlg: 1600px;
 
 
+.split {
+   display: inline;
+   @media screen and (min-width: 800px) {
+      display: flex;
+      gap: 20px;
+   }
+}
+
+.split-full {
+   width: 100%;
+}
+
+.split-75 {
+   @media screen and (min-width: 800px) {
+   width: 75%;
+   }
+}
+
+.split-2-3 {
+   @media screen and (min-width: 800px) {
+   width: 66%;
+   }
+}
+.split-50 {
+   @media screen and (min-width: 800px) {
+   width: 50%;
+   }
+}
+
+.split-1-3 {
+   @media screen and (min-width: 800px) {
+   width: 33%;
+   }
+}
+
+.split-25 {
+   @media screen and (min-width: 800px) {
+   width: 25%;
+   }
+}
+
+
 .col-full {
     width: 100%;
     padding-left: 5px;

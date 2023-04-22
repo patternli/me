@@ -1,0 +1,28 @@
+$border-width: 2px;
+$padding: 10px;
+
+
+.border {
+    border: $border-width solid $alpha;
+    padding: $padding;
+}
+
+.border-right {
+    border-right: $border-width solid $alpha;
+    padding-right: $padding;
+}
+
+.border-left {
+    border-left: $border-width solid $alpha;
+    padding-left: $padding;
+}
+
+.border-top {
+    border-top: $border-width solid $alpha;
+    padding-top: $padding;
+}
+
+.border-bottom {
+    border-bottom: $border-width solid $alpha;
+    padding-bottom: $padding;
+}

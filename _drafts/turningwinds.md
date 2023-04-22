@@ -1,9 +1,9 @@
 ---
 layout: projects
-title: "SAMHSA’s Center for Behavioral Health Statistics and Quality (CBHSQ)"
-date: 2021-6-1
-short: Redesign of website to improve usability, navigation, organizaton, and brand vision.
-role: Product Strategy & UX Lead
+title: "Turning Winds"
+date: 2022-12-1
+short: UX Review of website including audience profiles.
+role: UX Freelance
 feature: "/assets/img/projects/cbhsq-feature.png"
 ---
 

@@ -1,6 +1,6 @@
 {% assign card=site.project-stories %}
-<div class="card-group {{ card.settings.class | default: "grid-350" }}">
-{% for c in card %}
+<div class="card-group {{ card.settings.class | default: 'grid-350' }}">
+{% for c in card limit: include.limit %}
     <div class="card {{ c.class }}">
         {% if c.feature %}
         <div class="card-image"><img src="{{ c.feature}}"></div>
@@ -25,11 +25,9 @@
             {% endif %}
         </div>
         {% endif %}
-        {% if c.links %}
         <div class="card-foot">
-            {% include patterns/buttons/button.md content=c.links %}
+            <a href="{{ c.url }}" class="btn">Read about this project</a>
         </div>
-        {% endif %}
     </div>
     {% endfor %}
 </div>
